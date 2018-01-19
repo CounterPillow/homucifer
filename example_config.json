@@ -1,0 +1,11 @@
+{
+    "nickname": "xXxiVapexXx",
+    "realname": "Some Guy",
+    "password": "hunter2",
+    "network": "chat.freenode.net",
+    "port": 6667,
+    "channel": "#freenode",
+    "minimum_days": 7,
+    "use_tls": false,
+    "verify_tls": false
+}
