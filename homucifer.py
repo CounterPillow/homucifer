@@ -77,7 +77,10 @@ class HomuBot(BaseHomu):
         return self.ns_sent_queries[user]
 
     def on_private_message(self, by, message):
-        self.message(by, "https://files.catbox.moe/ksxbm8.png")
+        if message.lower().startswith("register"):
+            self.kickban(self.channel, by, "Reading comprehension")
+        else:
+            self.message(by, "https://files.catbox.moe/ksxbm8.png")
 
     def on_invite(self, channel, by):
         self.message(by, "I'm not signing another contract.")
